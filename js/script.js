@@ -39,12 +39,12 @@ function titleClickHandler(event) {
 //     link.addEventListener('click', titleClickHandler);
 // }
 
-function generateTitleLinks(CustomSelector = '') {
+function generateTitleLinks() {
 
     /* remove contents of titleList */
     const titleList = document.querySelector(optTitleListSelector);
     /* for each article */
-    const articles = document.querySelectorAll(optArticleSelector + CustomSelector);
+    const articles = document.querySelectorAll(optArticleSelector);
     let html = '';
     for (let article of articles) {
         /* get the article id */
