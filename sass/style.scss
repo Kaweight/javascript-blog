@@ -110,10 +110,14 @@ body {
 /* Post */
 
 .post {
-    display: none;
+    position: absolute;
+    opacity: 0;
 
     &.active {
-        display: block;
+        position: relative;
+        opacity: 1;
+        transition: opacity 1s;
+        z-index: 1;
     }
 }
 
